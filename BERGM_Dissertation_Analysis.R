@@ -1,25 +1,6 @@
 # =============================================================================
 # MSc dissertation: consolidated R analysis
 # =============================================================================
-#
-# This file consolidates:
-#   1. Florentine marriage network analysis (Chapter 4)
-#   2. Florentine frequentist/Bayesian GOF analysis (Chapter 5)
-#   3. Islamic State in Europe network analysis (Chapter 6)
-#
-# The final analytical workflow is preserved below in execution order.
-# Superseded duplicate figures, abandoned trial specifications, and commented
-# insertion instructions have been removed. Package loading is centralised
-# here, and Chapter 6 uses ISE_DATA_DIR rather than setwd().
-#
-# To use a different IS-E data directory, either edit ISE_DATA_DIR below or set
-# it before sourcing this file, for example:
-#
-#   ISE_DATA_DIR <- "/path/to/Nov13-master"
-#   source("Consolidated_Dissertation_Analysis.R")
-#
-# Chapter 6 outputs are written to ISE_OUTPUT_DIR (the current working
-# directory by default).
 
 required_packages <- c(
   "igraph", "ergm", "Bergm", "sna", "brms", "posterior", "coda",
